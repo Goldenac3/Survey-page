@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Abdul">
+    <meta name="description" content="Survey-form,survey,form">
+    <title>Survey Form</title>
+    <link type="text/css" rel="stylesheet" href="css/surveystyle.css">
+  </head>
+  <body>
+    <div class="main">
+    <header>
+      <h1 id="title">BOOMING KULTURE SURVEY FORM</h1>
+      <p id="description">Please fill out the survey from to help us improve your experience</p>
+    </header>
+  <form id="survey-form">
+    <div class="form-group">
+        <div class="left-tab">
+      <label for="name" id="name-label">Name</label>
+        </div>
+      <div class="right-tab">
+        <input type="text"  id="name" placeholder="First Name" required  class="boxes"><br><br>
+      <input type="text"  id="name" placeholder="Last Name" required  class="boxes">
+      </div>
+    </div>
+
+  <div class="form-group">
+    <div class="left-tab">
+      <label for="email" id="email-label">Email</label>
+    </div>
+    <div class="right-tab">
+    <input type="email" name="email" id="email" placeholder="Enter your email" required  class="boxes">
+    </div>
+    </div>
+
+    <div class="form-group">
+      <div class="left-tab">
+      <label for="age" id="number-label">Age</label>
+      </div>
+      <div class="right-tab">
+      <input type="number" id="number" name="age" min="16" max="99" placeholder="Age" required  class="boxes">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="left-tab">
+        <label id="dropdown-label" for="style">What is your style?</label>
+      </div>
+      <div class="right-tab">
+      <select name="style" id="dropdown"  class="boxes">
+        <option disabled selected value>Select an option</option>
+        <option value="class">Classy</option>
+        <option value="street">Street Wear</option>
+        <option value="casual">Casual</option>
+      </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="left-tab">
+        <p>How did you hear about us?</p>
+      </div>
+      <div class="right-tab">  
+        <ul class="list">
+         <li><label for="radio"><input type="radio" name="hear" value="online">Online</label></li>
+         <li><label for="radio"><input type="radio" name="hear" value="paper">Newspaper/Magazines</label></li>
+         <li><label for="radio"><input type="radio" name="hear" value="person">Person</label></li>
+         <li><label for="radio"><input type="radio" name="hear" value="other">Others</label></li>
+        </ul> 
+        </div> 
+    </div>
+
+    <div class="form-group">
+       <div class="left-tab">
+         <p>What do you think is our best product?<span class="clue">(Check all that apply)</span></p>
+       </div>
+       <div class="right-tab">
+        <ul class="list"> 
+          <li><label for="check"><input type="checkbox" name="product" value="pants">Pants</label></li>
+          <li><label for="check"><input type="checkbox" name="product" value="denims">Denims</label></li>
+          <li><label for="check"><input type="checkbox" name="product" value="tshirts">T-Shirts</label></li>
+          <li> <label for="check"><input type="checkbox" name="product" value="shirts">Shirts</label></li>
+          <li><label for="check"><input type="checkbox" name="product" value="outerwears">Outerwears</label></li>
+          <li><label for="check"><input type="checkbox" name="product" value="suit">SuitWears</label></li>
+          <li><label for="check"><input type="checkbox" name="product" value="dress">Dress</label></li>
+          <li><label for="check"><input type="checkbox" name="product" value="shoe">Shoes</label></li>
+        </ul> 
+        </div> 
+    </div>
+
+    <div class="form-group">
+      <div class="left-tab">
+         <p>Any comments or suggestions? Let us know how we can better serve you, thanks you.</p>
+      </div>
+      <div class="text"> 
+         <textarea id="ideas" name="ideas" rows="6" columns="30" placeholder="Enter your suggestions here..."  class="test"></textarea>
+       </div>  
+    </div>
+
+    <div class="button">
+         <button type="submit" id="submit">SUBMIT</button>
+    </div>
+
+    </form>
+  </main>
+  </body>
+</html>
